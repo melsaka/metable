@@ -11,13 +11,7 @@ class Meta extends Model
 
     protected $originalValue;
 
-    protected $fillable = [
-        'type',
-        'key',
-        'value',
-        'owner_id',
-        'owner_type'
-    ];
+    protected $guarded = ['id'];
 
     public function __construct(array $attributes = [])
     {
